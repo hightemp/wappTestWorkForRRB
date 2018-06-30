@@ -1,0 +1,9 @@
+AddDefaultCharset utf8
+
+DirectoryIndex yii/web/index.php
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /yii/web/index.php/$1 [L]
